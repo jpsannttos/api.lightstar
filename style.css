@@ -37,7 +37,7 @@
     z-index: 1;
 }
 
-/* Modifique o seu código CSS para adicionar uma linha entre os itens do menu */
+/* Modifique o seu código CSS para adicionar uma linha horizontal entre os itens do menu */
 .menu ul {
     list-style-type: none;
     padding: 0;
@@ -48,12 +48,11 @@
     padding: 15px;
     text-align: center;
     display: block;
-    border-right: 1px solid #ccc; /* Adicione uma borda à direita de cada elemento */
-    margin-right: -1px; /* Compense a borda para evitar espaçamento extra */
+    border-bottom: 1px solid #ccc; /* Adicione uma borda na parte inferior de cada elemento */
 }
 
 .menu ul li:last-child {
-    border-right: none; /* Remova a borda à direita do último elemento */
+    border-bottom: none; /* Remova a borda inferior do último elemento */
 }
 
 .menu ul li a {
