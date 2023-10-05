@@ -48,13 +48,17 @@
     padding: 15px;
     text-align: center;
     display: block; /* Altere a exibição para "block" */
+    border-right: 1px solid #ccc; /* Adicione uma borda à direita dos elementos */
+}
+
+.menu ul li:last-child {
+    border-right: none; /* Remova a borda à direita do último elemento */
 }
 
 .menu ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-}
 }
 
 /* Estilos para mostrar o menu quando clicado */
