@@ -32,25 +32,29 @@
     width: 250px;
     height: 100%;
     background-color: #333;
-    transition: 0.4s;
+    transition: left 0.4s ease; /* Adicione uma transição suave para a propriedade 'left' */
     padding-top: 60px;
     z-index: 1;
 }
 
+/* Modifique a exibição dos itens da lista para que sejam exibidos como blocos */
 .menu ul {
     list-style-type: none;
     padding: 0;
+    display: block; /* Altere a exibição para "block" */
 }
 
 .menu ul li {
     padding: 15px;
     text-align: center;
+    display: block; /* Altere a exibição para "block" */
 }
 
 .menu ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+}
 }
 
 /* Estilos para mostrar o menu quando clicado */
