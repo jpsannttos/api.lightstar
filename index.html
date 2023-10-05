@@ -44,16 +44,27 @@
     function toggleMenu() {
         var menu = document.querySelector('.menu');
         menu.classList.toggle('active');
+
+        if (!menu.classList.contains('active')) {
+            // Adicione um pequeno atraso antes de remover a classe 'active'
+            setTimeout(function () {
+                menu.style.left = '-250px';
+            }, 300); // Tempo em milissegundos para atraso
+        } else {
+            menu.style.left = '0';
+        }
     }
 
-    // Adicione um evento de clique no documento
+    // Adicione um evento de clique no documento para fechar o menu fora da área
     document.addEventListener('click', function (event) {
         var menu = document.querySelector('.menu');
         var menuToggle = document.querySelector('.menu-toggle');
 
-        // Verifique se o clique não foi dentro do menu ou do botão de toggle
         if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
             menu.classList.remove('active');
+            setTimeout(function () {
+                menu.style.left = '-250px';
+            }, 300); // Tempo em milissegundos para atraso
         }
     });
 </script>
