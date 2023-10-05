@@ -40,11 +40,22 @@
     <footer>
         &copy; 2023 Meu Site
     </footer>
-    <script>
+<script>
     function toggleMenu() {
         var menu = document.querySelector('.menu');
         menu.classList.toggle('active');
     }
-    </script>
+
+    // Adicione um evento de clique no documento
+    document.addEventListener('click', function (event) {
+        var menu = document.querySelector('.menu');
+        var menuToggle = document.querySelector('.menu-toggle');
+
+        // Verifique se o clique não foi dentro do menu ou do botão de toggle
+        if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+            menu.classList.remove('active');
+        }
+    });
+</script>
 </body>
 </html>
