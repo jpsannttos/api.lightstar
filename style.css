@@ -11,6 +11,19 @@
     transition: 0.4s;
 }
 
+/* Estilos para o menu quando fechado */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px;
+    z-index: 1;
+    transition: left 0.4s ease; /* Adicione uma transição suave para a propriedade 'left' */
+}
+
 /* Estilos para o menu (inicialmente oculto) */
 .menu {
     position: fixed;
