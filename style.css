@@ -41,13 +41,18 @@
 .menu ul {
     list-style-type: none;
     padding: 0;
-    display: block; /* Altere a exibição para "block" */
+    display: block;
 }
 
 .menu ul li {
     padding: 15px;
     text-align: center;
-    display: block; /* Altere a exibição para "block" */
+    display: block;
+    border-bottom: 1px solid #ccc; /* Adicione uma borda na parte inferior de cada elemento */
+}
+
+.menu ul li:last-child {
+    border-bottom: none; /* Remova a borda inferior do último elemento */
 }
 
 .menu ul li a {
