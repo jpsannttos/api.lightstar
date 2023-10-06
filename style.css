@@ -37,22 +37,17 @@
     z-index: 1;
 }
 
-/* Modifique o seu código CSS para adicionar uma linha horizontal entre os itens do menu */
+/* Modifique a exibição dos itens da lista para que sejam exibidos como blocos */
 .menu ul {
     list-style-type: none;
     padding: 0;
-    display: block;
+    display: block; /* Altere a exibição para "block" */
 }
 
 .menu ul li {
     padding: 15px;
     text-align: center;
-    display: block;
-    border-bottom: 1px solid #ccc; /* Adicione uma borda na parte inferior de cada elemento */
-}
-
-.menu ul li:last-child {
-    border-bottom: none; /* Remova a borda inferior do último elemento */
+    display: block; /* Altere a exibição para "block" */
 }
 
 .menu ul li a {
